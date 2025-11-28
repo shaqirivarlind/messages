@@ -1,0 +1,29 @@
+@url = http://localhost:3000/messages
+
+GET {{url}}
+###
+
+POST {{url}}
+content-type: application/json
+
+{
+  "content": "Hi there!"
+}
+###
+
+###Invalid content type
+POST {{url}}
+content-type: application/json
+
+{
+  "content": 123
+}
+###
+
+
+GET {{url}}/1sdfsdf19
+###
+
+
+GET {{url}}/171
+###
